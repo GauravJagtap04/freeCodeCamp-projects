@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey Form">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=OpenSans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking time to fill this survey form</p>
+      </header>
+      <main>
+        <form id="survey-form">
+
+          <label for="name" id="name-label">
+            Name
+            <input id="name" type="text" placeholder="Enter your name" required /></input>
+          </label><br>
+
+          <label for="email" id="email-label">
+            Email
+            <input id="email" type="email" placeholder="Enter your email" required /></input>
+          </label><br>
+
+          <label for="number" id="number-label">
+            Contact
+            <input id="number" type="number" min="0" max="9999999999" placeholder="Enter your contact number" required /></input>
+          </label>
+
+          <fieldset>
+            <label for="dropdown">Gender</label>
+            <select id="dropdown" name="dropdown">
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Other</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Account type (required)</legend>
+            <div class=some-class>
+              <input type="radio" class="inline" name="type" value="home" id="home" checked />
+              <label for="home">Home</label>
+              <input type="radio" class="inline" name="type" value="work" id="work" />
+              <label for="work">Work</label>
+            </div>  
+          </fieldset>
+
+          <fieldset>
+            <table>
+              <tr>
+                <td><input type="checkbox" value="tnc" id="tac" required /></td>
+                <td><label for="tac">I agree to the <a href="#">terms and conditions</a></label>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" value="remember" id="rem" required /></td>
+                <td><label for="rem">Remember Me</label></td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <label for="ta"></label>
+          <textarea id="ta" value="" placeholder="Enter bio..."></textarea><br>
+
+          <button type="submit" id="submit" value="Submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

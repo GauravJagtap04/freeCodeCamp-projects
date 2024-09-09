@@ -1,0 +1,97 @@
+:root{
+  --bgcolor: black;
+  --txtcolor: white;
+  --headercolor: #273db4;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--bgcolor);
+  color: var(--txtcolor);
+  font-family: poppins;
+}
+
+::selection {
+  color: var(--headercolor);
+  background: var(--bgcolor);
+}
+
+#main{
+  margin: 30px 10px;
+}
+
+header{
+  color: var(--txtcolor);
+  background-color: var(--headercolor);
+  margin: 20px 10px;
+  margin-bottom: 30px;
+  padding: 1px;
+  display: block;
+  text-align: center;
+}
+
+h1{
+  font-family: Poppins;
+  font-size: 32px;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+#img-div{
+  background-color: var(--txtcolor);
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--bgcolor);
+}
+
+#img-caption{
+  color: var(--bgcolor);
+  text-align: center;
+  font-family: open sans;
+  margin-top: 5px;
+}
+
+h2{
+  display: inline;
+  font-size: 1rem;
+  font-weight: normal;
+  color: orange;
+}
+
+h3{
+  display: inline;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#tribute-info{
+  text-align: justify;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1rem;
+}
+
+footer{
+  text-align: center;
+  color: var(--txtcolor);
+}
+
+a{
+  text-decoration: none;
+  color: skyblue;
+}
+
+a:hover{
+  background: var(--txtcolor);
+  color: var(--headercolor);
+}

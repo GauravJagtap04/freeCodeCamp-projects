@@ -1,0 +1,215 @@
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  margin: auto 10px;
+}
+
+header{
+  text-align: center;
+  display: block;
+  font-family: Poppins, sans-serif;
+  color: beige;
+}
+
+.container{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px auto;
+}
+
+header{
+  position: relative;
+}
+
+#title{
+  text-shadow: 2px 2px 5px #09203f;
+  margin: 20px auto 20px auto;
+}
+
+header > p{
+  font-style: italic;
+  margin: 0 auto 25px 0;
+  padding: 0;
+}
+
+main{
+  width: 80%;
+  height: auto;
+  max-width: 550px;
+  min-width: 150px;
+  border: 1px solid black;
+  margin: 30px auto;
+  padding: 30px 35px;
+  background: rgba(64, 64, 70, 0.43);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.8px);
+  -webkit-backdrop-filter: blur(14.8px);
+  border: 1px solid rgba(64, 64, 70, 0.83);
+  position: relative;
+}
+
+label{
+  font-family: Open Sans;
+  display: block;
+  color: beige;
+  text-shadow: 1px 1px 3px beige;
+  font-size: 1.15rem;
+}
+
+input{
+  font-family: 'Montserrat';
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  height: 1.8rem;
+  margin: 7px auto 7px auto;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+  padding-right: 0;
+}
+
+fieldset{
+  border: none;
+  padding: 0;
+}
+
+fieldset:first-of-type > label{
+  margin-top: 20px;
+  display: inline;
+  margin-right: 10px;
+}
+
+#dropdown{
+  margin-top: 20px;
+  display: inline;
+  width: 5rem;
+  height: 1.5rem;
+  border: 0;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+select{
+  font-family: 'Montserrat';
+}
+
+select option{
+  opacity: 80%;
+  color: grey;
+}
+
+fieldset:nth-of-type(2){
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+fieldset:nth-of-type(2) legend{
+  font-family: open sans;
+  color: beige;
+  text-shadow: 1px 1px 3px beige;
+  font-size: 1.15rem;
+}
+
+.some-class{
+  margin: 3.5px auto 3.5px 10px;
+  display: flex;
+  float: left;
+  clear: none;
+}
+
+fieldset:nth-of-type(2) label{
+  float: left;
+  clear: none;
+  vertical-align: middle;
+  padding: 0px 1em 0px 8px;
+}
+
+input[type="radio"],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+
+input[value=work]{
+  margin-left: 50px;
+}
+
+table{
+  margin-top: 10px;
+  padding: 0;
+}
+
+table tr, td{
+  margin-top: -1rem;
+  height: 10px;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+input[type="checkbox"] {
+  margin: 3px;
+}
+
+fieldset:nth-of-type(3) table tr td:nth-of-type(2) {
+  padding-left: 10px;
+}
+
+textarea{
+  width: 100%;
+  border: none;
+  height: 100px;
+  margin: 20px auto;
+  font-family: 'Montserrat';
+  resize: vertical;
+  padding: 5px 10px;
+  font-size: .9rem;
+  border-radius: 4px;
+  opacity: 90%;
+}
+
+#submit{
+  width: 70%;
+  height: 45px;
+  margin: 10px auto 0 auto;
+  display: block;
+  background-color: rgb(0, 107, 45);
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  transition: .2s;
+}
+
+#submit:hover{
+  transform: scale(97%);
+}
+
+a{
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover{
+  background-color: beige;
+  color: blue;
+}
