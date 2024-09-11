@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ES+Deco:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="project-container">
+        
+    </div>
     <nav>
         <div id="heading">
             <h1>freeCodeCamp Projects</h1>
@@ -25,18 +28,18 @@
                 <li>
                     Responsive Web Design
                     <ul class="projects-list-sub">
-                        <li>Survey Form</li>
-                        <li>Tribute Page</li>
-                        <li>Technical Documentation</li>
-                        <li>Product Landing Page</li>
-                        <li>Personal Portfolio Page</li>
+                        <li><a class="nav-submenu" href="#survey-form">Survey Form</a></li>
+                        <li><a class="nav-submenu" href="#tribute-page">Tribute Page</a></li>
+                        <li><a class="nav-submenu" href="#technical-documentation">Technical Documentation</a></li>
+                        <li><a class="nav-submenu" href="#product-landing-page">Product Landing Page</a></li>
+                        <li><a class="nav-submenu" href="#personal-portfolio-webpage">Personal Portfolio Webpage</a></li>
                     </ul>
                 </li>
                 <li>
                     Javascript Algorithms and Data Structures
                     <ul class="projects-list-sub">
-                        <li>Palindrome Checker</li>
-                        <li>Roman Numeral Converter</li>
+                        <li><a class="nav-submenu" href="#palindrome-checker">Palindrome Checker</a></li>
+                        <li><a class="nav-submenu" href="#roman-numeral-converter">Roman Numeral Converter</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,11 +50,96 @@
     </nav>
     <main>
         <div id="container">
-            
+            <fieldset>
+                <legend><h2>RESPONSIVE WEB DESIGN</h2></legend>
+                <div class="grid-container">
+                    <div id="survey-form" class="project-tile">
+                        <div class="project-title">
+                            Survey Form
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Responsive%20Web%20Design/Survey%20Form/index.html"></iframe class = "preview-frame" class = "preview-frame">
+                            <span onclick="loadProject('Responsive Web Design/Survey Form/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <div class="show-code-att" onclick="showCode('https:\/\/raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Responsive%20Web%20Design/Survey%20Form/index.html', 'https:\/\/raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Responsive%20Web%20Design/Survey%20Form/styles.css')">Show code</div>
+                        </div>
+                    </div>
+
+                    <div id="tribute-page" class="project-tile">
+                        <div class="project-title">
+                            Tribute Page
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Responsive Web Design/Tribute Page/index.html"></iframe class = "preview-frame">
+                            <span onclick="loadProject('Responsive Web Design/Tribute Page/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <a class="show-code-att" href="Responsive Web Design/Tribute Page/index.html">Show code</a>
+                        </div>
+                    </div>
+
+                    <div id="technical-docementation" class="project-tile">
+                        <div class="project-title">
+                            Technical Documentation
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Responsive Web Design/Technical Documentation/index.html"></iframe class = "preview-frame">
+                            <span onclick="loadProject('Responsive Web Design/Technical Documentation/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <a class="show-code-att" href="Responsive Web Design/Technical Documentation/index.html">Show code</a>
+                        </div>
+                    </div>
+
+                    <div id="product-landing-page" class="project-tile">
+                        <div class="project-title">
+                            Product Landing Page
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Responsive Web Design/Product Landing Page/index.html"></iframe class = "preview-frame">
+                            <span onclick="loadProject('Responsive Web Design/Product Landing Page/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <a class="show-code-att" href="Responsive Web Design/Product Landing Page/index.html">Show code</a>
+                        </div>
+                    </div>
+
+                    <div id="personal-portfolio-webpage" class="project-tile">
+                        <div class="project-title">
+                            Personal Portfolio Webpage
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Responsive Web Design/Personal Portfolio Webpage/index.html"></iframe class = "preview-frame">
+                            <span onclick="loadProject('Responsive Web Design/Personal Portfolio Webpage/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <a class="show-code-att" href="Responsive Web Design/Personal Portfolio Webpage/index.html">Show code</a>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h2></legend>
+                <div class="grid-container">
+                    <div id="palindrome-checker" class="project-tile">
+                        <div class="project-title">
+                            Palindrome Checker
+                        </div>
+                        <div class="preview">
+                            <iframe class = "preview-frame" src="Javascript Algorithms and Data Structures/Palindrome Checker/index.html"></iframe class = "preview-frame">
+                            <span onclick="loadProject('Javascript Algorithms and Data Structures/Palindrome Checker/index.html')">Show in full screen</span>
+                        </div>
+                        <div class="info">
+                            <a class="show-code-att" href="Javascript Algorithms and Data Structures/Palindrome Checker/index.html">Show code</a>
+                        </div>
+                    </div>
+            </fieldset>
         </div>
     </main>
     <footer>
-        Developed by <span>Gaurav</span>
+        Developed by <a id="dev-name" href="https://github.com/GauravJagtap04"><span>Gaurav</span></a>
     </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>

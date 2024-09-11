@@ -16,6 +16,8 @@ body{
 #container{
   text-align: center;
   font-family: poppins;
+  max-width: 60%;
+  max-height: 100vh;
 }
 
 #content-box{

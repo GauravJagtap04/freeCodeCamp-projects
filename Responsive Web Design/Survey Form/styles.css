@@ -12,7 +12,7 @@ body{
 header{
   text-align: center;
   display: block;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins;
   color: beige;
 }
 
@@ -47,9 +47,9 @@ main{
   border: 1px solid black;
   margin: 30px auto;
   padding: 30px 35px;
-  background: rgba(64, 64, 70, 0.43);
+  background: rgba(122, 122, 122, 0.158);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.26);
   backdrop-filter: blur(14.8px);
   -webkit-backdrop-filter: blur(14.8px);
   border: 1px solid rgba(64, 64, 70, 0.83);
@@ -57,15 +57,15 @@ main{
 }
 
 label{
-  font-family: Open Sans;
+  font-family: Poppins;
   display: block;
   color: beige;
-  text-shadow: 1px 1px 3px beige;
+  text-shadow: 0px 0px 2px beige;
   font-size: 1.15rem;
 }
 
 input{
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   border: none;
   display: block;
   width: 100%;
@@ -105,10 +105,11 @@ fieldset:first-of-type > label{
 }
 
 select{
-  font-family: 'Montserrat';
+  font-family: Montserrat;
 }
 
 select option{
+  font-family: Montserrat;
   opacity: 80%;
   color: grey;
 }
@@ -138,6 +139,11 @@ fieldset:nth-of-type(2) label{
   clear: none;
   vertical-align: middle;
   padding: 0px 1em 0px 8px;
+}
+
+#acc-type {
+  font-family: Poppins;
+  text-shadow: 0px 0px 2px beige;
 }
 
 input[type="radio"],
@@ -176,7 +182,7 @@ textarea{
   border: none;
   height: 100px;
   margin: 20px auto;
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   resize: vertical;
   padding: 5px 10px;
   font-size: .9rem;
@@ -206,7 +212,8 @@ textarea{
 
 a{
   text-decoration: none;
-  color: purple;
+  text-shadow: 0px 0px 5px #868686;
+  color: rgb(255, 154, 255);
 }
 
 a:hover{
