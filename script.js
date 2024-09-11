@@ -26,7 +26,11 @@ function closeProjectContainer() {
   footer.style.filter = 'none';
 }
 
-async function showCode(htmlUrl, cssUrl) {
+async function showCode(htmlUrl, cssUrl, jsUrl) {
+  nav.style.filter = 'blur(5px)';
+  main.style.filter = 'blur(5px)';
+  footer.style.filter = 'blur(5px)';
+
   projectContainer.style.display = "block";
   projectContainer.innerHTML = "";
 
@@ -38,16 +42,28 @@ async function showCode(htmlUrl, cssUrl) {
   const htmlCode = await fetchFile(htmlUrl);
   const cssCode = await fetchFile(cssUrl);
 
+  let jsCode = '';
+  if (jsUrl) { 
+    jsCode = await fetchFile(jsUrl);
+  } else {
+    jsCode = 'No JavaScript file available.';
+  }
+
   const codeDisplay = document.getElementById('codeDisplay');
-  codeDisplay.textContent = `HTML Code:\n${htmlCode}\n\nCSS Code:\n${cssCode}`;
+  codeDisplay.textContent = `HTML Code:\n${htmlCode}\n\nCSS Code:\n${cssCode}\n\nJavaScript Code:\n${jsCode}`;
   codeDisplay.style.display = 'block';
 }
 
 async function fetchFile(url) {
-  const response = await fetch(url);
-  if (response.ok) {
-    return await response.text();
-  } else {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      return await response.text();
+    } else {
+      return 'Error fetching file.';
+    }
+  } catch (error) {
     return 'Error fetching file.';
   }
 }
+
