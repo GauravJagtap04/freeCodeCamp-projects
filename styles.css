@@ -366,16 +366,16 @@ legend {
 .show-code-att {
     text-decoration: none;
     color: var(--black);
-    padding: 5px 25px;
+    padding: 3px 20px;
     border-radius: 10px;
 }
 
 .show-code-att:hover {
     background-color: var(--black);
     color: var(--white);
-    font-weight: 700;
+    font-weight: 600;
     transition-duration: .2s;
-    scale: 110%;
+    scale: 105%;
 }
 
 
@@ -458,12 +458,16 @@ footer span {
 
     .project-tile {
         width: 90%;
-        margin: 0 auto;
-        height: 430px;
+        margin: 20px auto;
+        height: 400px;
+    }
+
+    .project-tile:first-of-type {
+        margin-top: 0;
     }
 
     .project-tile:last-of-type {
-        height: 400px;
+        margin-bottom: 0;
     }
 
     .preview span {
