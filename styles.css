@@ -17,7 +17,7 @@
     --nav-boxs-1: #0a00259a;
     --nav-boxs-2: #0a00666e;
     --nav-submenu-b: rgba(211, 211, 211, 0.795);
-    --nav-submenu-bg: rgba(63, 63, 63, 0.623);
+    --nav-submenu-bg: rgba(6, 0, 39, 0.623);
 }
 
 nav, main {
@@ -30,7 +30,7 @@ main.disable-transitions {
 }
 
 body::-webkit-scrollbar {
-    background-color: transparent;
+    background-color: var(--white);
     width: 10px;
 }
 
@@ -172,6 +172,7 @@ ul {
 
 #projects-list-main > li:hover {
     transform: translateY(5px);
+    cursor: pointer;
 }
 
 #projects-list-main li:not(.projects-list-sub li) {
@@ -284,6 +285,10 @@ h2 {
 
 fieldset {
     border-radius: 10px;
+    margin-top: 30px;
+}
+
+fieldset:not(:first-of-type) {
     margin-top: 60px;
 }
 
@@ -438,6 +443,10 @@ footer span {
         padding: 30px 0;
     }
 
+    fieldset:not(:first-of-type) {
+        margin-top: 40px;
+    }
+
     h2 {
         font-size: .8rem;
         margin: 0 10px;
@@ -451,6 +460,10 @@ footer span {
         width: 90%;
         margin: 0 auto;
         height: 430px;
+    }
+
+    .project-tile:last-of-type {
+        height: 400px;
     }
 
     .preview span {
