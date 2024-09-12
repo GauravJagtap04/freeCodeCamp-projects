@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,114 +27,36 @@
             <ul id="projects-list-main">
                 <li>
                     Responsive Web Design
-                    <ul class="projects-list-sub">
-                        <li><a class="nav-submenu" href="#survey-form">Survey Form</a></li>
-                        <li><a class="nav-submenu" href="#tribute-page">Tribute Page</a></li>
-                        <li><a class="nav-submenu" href="#technical-documentation">Technical Documentation</a></li>
-                        <li><a class="nav-submenu" href="#product-landing-page">Product Landing Page</a></li>
-                        <li><a class="nav-submenu" href="#personal-portfolio-webpage">Personal Portfolio Webpage</a></li>
+                    <ul class="projects-list-sub" id="resp-web-nav-menu">
+                        
                     </ul>
                 </li>
                 <li>
                     Javascript Algorithms and Data Structures
-                    <ul class="projects-list-sub">
-                        <li><a class="nav-submenu" href="#palindrome-checker">Palindrome Checker</a></li>
-                        <li><a class="nav-submenu" href="#roman-numeral-converter">Roman Numeral Converter</a></li>
+                    <ul class="projects-list-sub" id="js-algo-dsa-nav-menu">
+                        
                     </ul>
                 </li>
             </ul>
         </div>  
         <div id="theme">
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <i id="theme-icon" class="fa-regular fa-moon" aria-hidden="true" title="Change theme"></i>
         </div>
     </nav>
     <main>
         <div id="container">
             <fieldset>
                 <legend><h2>RESPONSIVE WEB DESIGN</h2></legend>
-                <div class="grid-container">
-                    <div id="survey-form" class="project-tile">
-                        <div class="project-title">
-                            Survey Form
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Responsive%20Web%20Design/Survey%20Form/index.html"></iframe class = "preview-frame" class = "preview-frame">
-                            <span onclick="loadProject('Responsive Web Design/Survey Form/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <div class="show-code-att" onclick="showCode('https:\/\/raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Responsive%20Web%20Design/Survey%20Form/index.html', 'https:\/\/raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Responsive%20Web%20Design/Survey%20Form/styles.css')">Show code</div>
-                        </div>
-                    </div>
-
-                    <div id="tribute-page" class="project-tile">
-                        <div class="project-title">
-                            Tribute Page
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Responsive Web Design/Tribute Page/index.html"></iframe class = "preview-frame">
-                            <span onclick="loadProject('Responsive Web Design/Tribute Page/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <a class="show-code-att" href="Responsive Web Design/Tribute Page/index.html">Show code</a>
-                        </div>
-                    </div>
-
-                    <div id="technical-docementation" class="project-tile">
-                        <div class="project-title">
-                            Technical Documentation
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Responsive Web Design/Technical Documentation/index.html"></iframe class = "preview-frame">
-                            <span onclick="loadProject('Responsive Web Design/Technical Documentation/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <a class="show-code-att" href="Responsive Web Design/Technical Documentation/index.html">Show code</a>
-                        </div>
-                    </div>
-
-                    <div id="product-landing-page" class="project-tile">
-                        <div class="project-title">
-                            Product Landing Page
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Responsive Web Design/Product Landing Page/index.html"></iframe class = "preview-frame">
-                            <span onclick="loadProject('Responsive Web Design/Product Landing Page/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <a class="show-code-att" href="Responsive Web Design/Product Landing Page/index.html">Show code</a>
-                        </div>
-                    </div>
-
-                    <div id="personal-portfolio-webpage" class="project-tile">
-                        <div class="project-title">
-                            Personal Portfolio Webpage
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Responsive Web Design/Personal Portfolio Webpage/index.html"></iframe class = "preview-frame">
-                            <span onclick="loadProject('Responsive Web Design/Personal Portfolio Webpage/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <a class="show-code-att" href="Responsive Web Design/Personal Portfolio Webpage/index.html">Show code</a>
-                        </div>
-                    </div>
+                <div class="grid-container" id="resp-web-fieldset">
+                    
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend><h2>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h2></legend>
-                <div class="grid-container">
-                    <div id="palindrome-checker" class="project-tile">
-                        <div class="project-title">
-                            Palindrome Checker
-                        </div>
-                        <div class="preview">
-                            <iframe class = "preview-frame" src="Javascript Algorithms and Data Structures/Palindrome Checker/index.html"></iframe class = "preview-frame">
-                            <span onclick="loadProject('Javascript Algorithms and Data Structures/Palindrome Checker/index.html')">Show in full screen</span>
-                        </div>
-                        <div class="info">
-                            <a class="show-code-att" href="Javascript Algorithms and Data Structures/Palindrome Checker/index.html">Show code</a>
-                        </div>
-                    </div>
+                <div class="grid-container" id="js-algo-dsa-fieldset">
+
+                </div>
             </fieldset>
         </div>
     </main>

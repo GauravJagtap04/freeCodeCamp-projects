@@ -1,4 +1,43 @@
-:root
+:root {
+    --white: white;
+    --black: black;
+    --nav-bg: #e0e0e0;
+    --main-bg: rgb(255, 255, 255);
+    --nav-boxs-1: #e2e2e2e1;
+    --nav-boxs-2: #9494948f;
+    --nav-submenu-b: #4e4e4e;
+    --nav-submenu-bg: rgba(139, 139, 139, 0.37);
+}
+
+.dark-theme {
+    --white: black;
+    --black: #e0e0e0;
+    --nav-bg: #05001a;
+    --main-bg: rgb(1, 0, 22);
+    --nav-boxs-1: #0a00259a;
+    --nav-boxs-2: #0a00666e;
+    --nav-submenu-b: rgba(211, 211, 211, 0.795);
+    --nav-submenu-bg: rgba(63, 63, 63, 0.623);
+}
+
+nav, main {
+    transition: background-color .7s ease-in-out, color .7s ease-in-out, box-shadow .7s ease-in-out;
+}
+
+nav.disable-transitions,
+main.disable-transitions {
+    transition: none !important;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--black);
+    border-radius: 5px;
+}
 
 body {
     box-sizing: border-box;
@@ -17,11 +56,10 @@ body {
     transform: translate(-50%, -50%);
     z-index: 99999999;
     display: none;
-    border: 2px solid rgba(0, 0, 0, 0.466);
 }
 
 #project-container:hover {
-    outline: 2px solid black;
+    outline: 2px solid var(--black);
 }
 
 #close-icon {
@@ -39,9 +77,22 @@ body {
     height: 100%;
 }
 
+#codeDisplay::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+#codeDisplay::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 2px;
+}
+
+#codeDisplay::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(207, 207, 207);
+}
 
 #codeDisplay {
-    background-color: #000000;
+    background-color: #000000e0;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -49,6 +100,11 @@ body {
     font-family: Roboto Mono;
     color: white;
     overflow: auto;
+}
+
+.code-lang-title {
+    color: white;
+    font-family: Poppins;
 }
 
 
@@ -62,8 +118,8 @@ nav {
     top: 0;
     margin: 0;
     padding: 0;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    background: var(--nav-bg);
+    box-shadow: 20px 20px 60px var(--nav-boxs-1), -20px -20px 60px var(--nav-boxs-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,6 +141,7 @@ h1 {
     margin: 0;
     min-width: 190px;
     overflow: hidden;
+    color: var(--black);
 }
 
 ul {
@@ -106,6 +163,7 @@ ul {
     margin: 0;
     width: 500px;
     height: fit-content;
+    color: var(--black);
 }
 
 #projects-list-main:hover {
@@ -135,7 +193,7 @@ ul {
     font-weight: 500;
     width: 300px;
     padding: 0;
-    background-color: rgba(139, 139, 139, 0.37);
+    background-color: var(--nav-submenu-bg);
     white-space: wrap;
     border-radius: 0 0 10px 10px;
     backdrop-filter: blur(4px);
@@ -170,16 +228,21 @@ ul {
 #projects-list-main > li > ul li:hover {
     border: 1px solid black;
     background: black;
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     transition-duration: .2s;
     font-size: 1.1rem;
+}
+
+#projects-menu::-webkit-scrollbar {
+    display: none;
 }
 
 #theme {
     width: 10%;
     display: flex;
     justify-content: center;
+    color: var(--black);
 }
 
 i {
@@ -189,7 +252,7 @@ i {
 
 .nav-submenu {
     text-decoration: none;
-    color: rgb(78, 78, 78);
+    color: var(--nav-submenu-b);
 }
 
 .projects-list-sub li:hover a {
@@ -201,7 +264,9 @@ i {
 
 
 main {
-    margin-top: 15vh;
+    margin-top: 10vh;
+    padding-top: 1vh;
+    background-color: var(--main-bg);
 }
 
 #container {
@@ -214,6 +279,7 @@ h2 {
     font-family: Poppins;
     letter-spacing: 1px;
     margin: 0 20px;
+    color: var(--black);
 }
 
 fieldset {
@@ -245,8 +311,8 @@ legend {
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 5px 5px 0 0;
 }
 
@@ -289,18 +355,19 @@ legend {
     height: 50px;
     text-decoration: none;
     background-color: rgba(66, 66, 66, 0.466);
+    border-radius: 0 0 5px 5px;
 }
 
 .show-code-att {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     padding: 5px 25px;
     border-radius: 10px;
 }
 
 .show-code-att:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     font-weight: 700;
     transition-duration: .2s;
     scale: 110%;
@@ -337,4 +404,56 @@ footer span {
 #dev-name {
     padding: 0;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        margin: 0;
+        padding: 0;
+        height: 4rem;
+    }
+
+    #heading {
+        width: max-content;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    #projects-menu {
+        display: none;
+    }
+
+    main {
+        margin-top: 4rem;
+        padding-top: 10px;
+    }
+
+    fieldset {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: .8rem;
+        margin: 0 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-tile {
+        width: 90%;
+        margin: 0 auto;
+        height: 430px;
+    }
+
+    .preview span {
+        right: 10px;
+    }
 }
