@@ -64,12 +64,13 @@ body {
 
 #close-icon {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 5px;
     width: 25px;
     height: 25px;
-    background-color: rgba(255, 255, 255, 0.808);
+    background-color: rgba(255, 255, 255, 0.671);
     filter: invert();
+    box-shadow: 0px 0px 20px solid black;
 }
 
 #projectFrame {
@@ -107,8 +108,7 @@ body {
     font-family: Poppins;
 }
 
-
-
+/* nav section */
 
 nav {
     z-index: 1;
@@ -228,7 +228,7 @@ ul {
 
 #projects-list-main > li > ul li:hover {
     border: 1px solid black;
-    background: black;
+    background: var(--black);
     color: var(--white);
     border-radius: 5px;
     transition-duration: .2s;
@@ -256,13 +256,13 @@ i {
     color: var(--nav-submenu-b);
 }
 
+
 .projects-list-sub li:hover a {
-    color: white;
+    color: var(--white);
 }
 
 
-
-
+/* main section */
 
 main {
     margin-top: 10vh;
@@ -378,11 +378,7 @@ legend {
     scale: 105%;
 }
 
-
-
-
-
-
+/* footer section */
 
 footer {
     font-family: Inter;
