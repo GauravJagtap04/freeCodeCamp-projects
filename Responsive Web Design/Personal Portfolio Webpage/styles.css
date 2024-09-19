@@ -16,6 +16,7 @@ body{
     background-color: black;
     margin-top: 0;
     top: 0;
+    overflow: hidden;
 }
 
 #navbar ul{
@@ -66,7 +67,7 @@ body{
 
 #about h1 span{
     background: linear-gradient(to right, lightblue, lightgreen);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -224,9 +225,19 @@ footer{
     text-align: right;
     padding: 10px;
     font-weight: 500;
+    font-family: Roboto Mono;
 }
 
 @media screen and (max-width: 900px){
+    #navbar ul {
+        padding: 0;
+    }
+
+    #navbar ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .project-container{
         display: grid;
         max-width: fit-content;
@@ -251,6 +262,16 @@ footer{
         overflow-x: hidden;
         overflow-y: auto;
     }
+
+    #navbar ul {
+        padding: 0;
+    }
+
+    #navbar ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .project-container{
         display: grid;
         max-width: fit-content;
@@ -276,6 +297,10 @@ footer{
         justify-content: center;
         align-items: center;
         background-color: black;
+    }
+
+    .social-links {
+        overflow: hidden;
     }
 
     .social-links a{

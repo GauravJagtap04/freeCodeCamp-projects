@@ -81,3 +81,10 @@ button:hover{
   margin-bottom: 0;
   font-family: Montserrat;
 }
+
+@media only screen and (max-width: 728px) {
+  #container {
+    width: 80%;
+    max-width: 80%;
+  }
+}
