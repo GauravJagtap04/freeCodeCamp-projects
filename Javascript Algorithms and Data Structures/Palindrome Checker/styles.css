@@ -17,6 +17,7 @@ body{
   text-align: center;
   font-family: poppins;
   max-width: 60%;
+  overflow: hidden;
   max-height: 100vh;
 }
 
@@ -38,9 +39,10 @@ input{
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid black;
-  width: 250px;
   text-align: center;
   font-family: Montserrat;
+  width: 250px;
+  min-width: auto;
 }
 
 input:focus{
