@@ -1,4 +1,4 @@
-body{
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -6,14 +6,14 @@ body{
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#container{
+#container {
   text-align: center;
   font-family: poppins;
   max-width: 60%;
@@ -21,7 +21,7 @@ body{
   max-height: 100vh;
 }
 
-#content-box{
+#content-box {
   display: block;
   margin: 30px auto;
   background: white;
@@ -31,11 +31,11 @@ body{
   color: black;
 }
 
-#margin-tp{
+#margin-tp {
   margin-top: 5px;
 }
 
-input{
+input {
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid black;
@@ -45,12 +45,12 @@ input{
   min-width: auto;
 }
 
-input:focus{
+input:focus {
   outline: none;
   background-color: white;
 }
 
-button{
+button {
   background-color: seagreen;
   padding: 10px 20px;
   color: white;
@@ -64,21 +64,21 @@ button{
   box-shadow: 0px 0px 15px seagreen;
 }
 
-button:hover{
+button:hover {
   border: 2px solid black;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-#info{
+#info {
   margin: 10px auto;
   max-width: 400px;
   color: #dddddd;
 }
 
-#result{
+#result {
   margin-top: 15px;
   margin-bottom: 0;
   font-family: Montserrat;

@@ -1,22 +1,22 @@
-html{
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   margin: auto 10px;
 }
 
-header{
+header {
   text-align: center;
   display: block;
   font-family: Poppins;
   color: beige;
 }
 
-.container{
+.container {
   display: block;
   align-items: center;
   justify-content: center;
@@ -24,22 +24,22 @@ header{
   margin: 50px auto;
 }
 
-header{
+header {
   position: relative;
 }
 
-#title{
+#title {
   text-shadow: 2px 2px 5px #09203f;
   margin: 20px auto 20px auto;
 }
 
-header > p{
+header > p {
   font-style: italic;
   margin: 0 auto 25px 0;
   padding: 0;
 }
 
-main{
+main {
   width: 80%;
   height: auto;
   max-width: 550px;
@@ -56,7 +56,7 @@ main{
   position: relative;
 }
 
-label{
+label {
   font-family: Poppins;
   display: block;
   color: beige;
@@ -64,7 +64,7 @@ label{
   font-size: 1.15rem;
 }
 
-input{
+input {
   font-family: Montserrat;
   border: none;
   display: block;
@@ -78,22 +78,22 @@ input{
 
 input[type="text"],
 input[type="email"],
-input[type="number"]{
+input[type="number"] {
   padding-right: 0;
 }
 
-fieldset{
+fieldset {
   border: none;
   padding: 0;
 }
 
-fieldset:first-of-type > label{
+fieldset:first-of-type > label {
   margin-top: 20px;
   display: inline;
   margin-right: 10px;
 }
 
-#dropdown{
+#dropdown {
   margin-top: 20px;
   display: inline;
   width: 5rem;
@@ -104,37 +104,37 @@ fieldset:first-of-type > label{
   justify-content: center;
 }
 
-select{
+select {
   font-family: Montserrat;
 }
 
-select option{
+select option {
   font-family: Montserrat;
   opacity: 80%;
   color: grey;
 }
 
-fieldset:nth-of-type(2){
+fieldset:nth-of-type(2) {
   display: flex;
   overflow: hidden;
   margin-top: 20px;
 }
 
-fieldset:nth-of-type(2) legend{
+fieldset:nth-of-type(2) legend {
   font-family: open sans;
   color: beige;
   text-shadow: 1px 1px 3px beige;
   font-size: 1.15rem;
 }
 
-.some-class{
+.some-class {
   margin: 3.5px auto 3.5px 10px;
   display: flex;
   float: left;
   clear: none;
 }
 
-fieldset:nth-of-type(2) label{
+fieldset:nth-of-type(2) label {
   float: left;
   clear: none;
   vertical-align: middle;
@@ -153,16 +153,17 @@ input.radio {
   margin: 2px 0 0 2px;
 }
 
-input[value=work]{
+input[value="work"] {
   margin-left: 50px;
 }
 
-table{
+table {
   margin-top: 10px;
   padding: 0;
 }
 
-table tr, td{
+table tr,
+td {
   margin-top: -1rem;
   height: 10px;
   padding: 0;
@@ -177,7 +178,7 @@ fieldset:nth-of-type(3) table tr td:nth-of-type(2) {
   padding-left: 10px;
 }
 
-textarea{
+textarea {
   width: 100%;
   border: none;
   height: 100px;
@@ -185,12 +186,12 @@ textarea{
   font-family: Montserrat;
   resize: vertical;
   padding: 5px 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-radius: 4px;
   opacity: 90%;
 }
 
-#submit{
+#submit {
   width: 70%;
   height: 45px;
   margin: 10px auto 0 auto;
@@ -203,20 +204,20 @@ textarea{
   font-family: Poppins;
   font-size: 17px;
   font-weight: 500;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-#submit:hover{
+#submit:hover {
   transform: scale(97%);
 }
 
-a{
+a {
   text-decoration: none;
   text-shadow: 0px 0px 5px #868686;
   color: rgb(255, 154, 255);
 }
 
-a:hover{
+a:hover {
   background-color: beige;
   color: blue;
 }

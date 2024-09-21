@@ -11,14 +11,16 @@ function submit() {
 
     if (textInputValue.length >= 1) {
       setTimeout(() => {
-			    textInput.value = "";
-		    }, 0);
+        textInput.value = "";
+      }, 0);
 
       if (textInputValue.length === 1) {
         result.textContent = `${textInputValue} is a palindrome`;
       } else if (textInputValue.length > 1) {
-        const formattedStr = textInputValue.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-        const reverseStr = formattedStr.split('').reverse().join('');
+        const formattedStr = textInputValue
+          .replace(/[^a-zA-Z0-9]/g, "")
+          .toLowerCase();
+        const reverseStr = formattedStr.split("").reverse().join("");
         if (formattedStr === reverseStr) {
           result.textContent = `${textInputValue} is a palindrome`;
         } else {
@@ -29,7 +31,7 @@ function submit() {
   }
 }
 
-textInput.addEventListener("keypress", function(event) {
+textInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault;
     checkButton.click();

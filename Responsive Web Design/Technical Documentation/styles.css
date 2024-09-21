@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -6,14 +6,14 @@
   color: #313638;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
   line-height: 1.5;
   background-color: #fafafa;
 }
 
-#navbar{
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@ body{
   font-family: Inter;
 }
 
-nav > header{
+nav > header {
   font-size: 1.2rem;
   font-family: Montserrat;
   letter-spacing: 2px;
@@ -41,36 +41,36 @@ nav > header{
   text-shadow: 1px 2px 5px grey;
 }
 
-nav > ul > li{
+nav > ul > li {
   padding: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-nav > ul > li:not(:first-child){
+nav > ul > li:not(:first-child) {
   border-top: 0;
 }
 
-nav > ul > li > a{
+nav > ul > li > a {
   text-decoration: none;
   font-family: Open Sans;
   color: black;
   margin: 5px auto;
 }
 
-#main-doc{
+#main-doc {
   position: absolute;
   margin-left: 300px;
   overflow: hidden;
 }
 
 #main-doc .main-section p,
-#main-doc .main-section ul li{
+#main-doc .main-section ul li {
   text-align: justify;
   margin: 1rem 2rem 1rem 1rem;
 }
 
-.main-section > header{
+.main-section > header {
   font-family: Poppins;
   font-size: 1.7rem;
   display: block;
@@ -85,15 +85,15 @@ nav > ul > li > a{
 }
 
 .main-section > p,
-.main-section >ul{
+.main-section > ul {
   font-family: Rubik;
 }
 
-.main-section > ul{
+.main-section > ul {
   margin-left: 30px;
 }
 
-code{
+code {
   display: flex;
   padding: 1rem;
   background-color: #ddd;
@@ -103,8 +103,7 @@ code{
 }
 
 @media (max-width: 600px) {
-
-  #navbar{
+  #navbar {
     top: 0;
     width: 100%;
     height: 343px;
@@ -119,7 +118,7 @@ code{
     border-left: 0px;
   }
 
-  #navbar > ul li:last-of-type{
+  #navbar > ul li:last-of-type {
     border-bottom: 0;
   }
 
@@ -130,7 +129,7 @@ code{
     letter-spacing: 3px;
   }
 
-  #main-doc{
+  #main-doc {
     position: absolute;
     width: 100%;
     margin-top: 343px;
@@ -138,16 +137,16 @@ code{
     margin-right: 0;
   }
 
-  .main-section{
+  .main-section {
     margin: 10px;
   }
 
-  .main-section:last-of-type{
+  .main-section:last-of-type {
     margin-bottom: 30px;
   }
 
   #main-doc .main-section p,
-  #main-doc .main-section ul li{
+  #main-doc .main-section ul li {
     margin: 1rem;
   }
 }
