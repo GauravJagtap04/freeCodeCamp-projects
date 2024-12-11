@@ -1,0 +1,96 @@
+<svg
+      id="eMg6YZjoNaS1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 300 300"
+      shape-rendering="geometricPrecision"
+      text-rendering="geometricPrecision"
+      project-id="83e0c485dcdc4b51a422766e276356c0"
+      export-id="e3372f6114964697a719c44d42c8173c"
+      cached="false"
+    >
+      <g>
+        <polygon
+          points="-84.234032,-146.048957 -41.985957,-103.373604
+        -126.482107,-103.373604 -84.234032,-146.048957"
+          transform="matrix(1.005963 0 0 0.995891 234.73632 302.948842)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('DOWN')"
+        />
+        <rect
+          width="85"
+          height="80"
+          rx="0"
+          ry="0"
+          transform="translate(107.500003
+        200)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('DOWN')"
+        />
+      </g>
+      <g>
+        <polygon
+          points="-84.234032,-146.048957 -41.985957,-103.373604
+        -126.482107,-103.373604 -84.234032,-146.048957"
+          transform="matrix(0
+        1.005963-.995891 0-2.948842 234.736319)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('LEFT')"
+        />
+        <rect
+          width="85"
+          height="80"
+          rx="0"
+          ry="0"
+          transform="matrix(0 1-1 0 100 107.499999)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('LEFT')"
+        />
+      </g>
+      <g transform="translate(0 0.000001)">
+        <polygon
+          points="-84.234032,-146.048957 -41.985957,-103.373604
+        -126.482107,-103.373604 -84.234032,-146.048957"
+          transform="matrix(0-1.005963 0.995891 0 302.948842 65.26368)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('RIGHT')"
+        />
+        <rect
+          width="85"
+          height="80"
+          rx="0"
+          ry="0"
+          transform="matrix(0 1-1 0 280
+        107.5)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('RIGHT')"
+        />
+      </g>
+      <g transform="translate(.000001 0)">
+        <polygon
+          points="-84.234032,-146.048957 -41.985957,-103.373604
+        -126.482107,-103.373604 -84.234032,-146.048957"
+          transform="matrix(-1.005963 0 0-.995891 65.263683-2.948842)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('UP')"
+        />
+        <rect
+          width="85"
+          height="80"
+          rx="0"
+          ry="0"
+          transform="translate(107.500003
+        20)"
+          fill="#272727"
+          stroke-width="0"
+          onclick="console.log('UP')"
+        />
+      </g>
+    </svg>

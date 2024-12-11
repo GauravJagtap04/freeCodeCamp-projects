@@ -179,6 +179,54 @@ const projectsJsAlgoDsa = [
     jsUrl:
       "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Palindrome%20Checker/script.js",
   },
+  {
+    id: "roman-numeral-converter",
+    projectName: "Roman Numeral Converter",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Roman Numeral Converter/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Roman%20Numeral%20Converter/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Roman%20Numeral%20Converter/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Roman%20Numeral%20Converter/script.js",
+  },
+  {
+    id: "telephone-number-validator",
+    projectName: "Telephone Number Validator",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Telephone Number Validator/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Telephone%20Number%20Validator/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Telephone%20Number%20Validator/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Telephone%20Number%20Validator/script.js",
+  },
+  {
+    id: "cash-register",
+    projectName: "Cash Register",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Cash Register/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/script.js",
+  },
+  {
+    id: "pokemon-search-app",
+    projectName: "Pokémon Search App",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Pokemon Search App/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/script.js",
+  },
 ];
 
 const loadProjectTiles = () => {

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Trispace:wght@100..800&family=Outfit:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link id="favicon" rel="icon" href="https://i.imgur.com/ZjL4Fof.gif" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="pokedex">
+      <div id="lhs-complete">
+        <div id="lhs-top">
+          <div id="lights">
+            <div id="big-blue-light-ring">
+              <div id="big-blue-light"></div>
+            </div>
+            <div id="traffic-lights">
+              <div id="red-light" class="traffic-light"></div>
+              <div id="yellow-light" class="traffic-light"></div>
+              <div id="green-light" class="traffic-light"></div>
+            </div>
+          </div>
+        </div>
+        <div id="hinge-n-lhs">
+          <div id="lhs">
+            <div id="lhs-shadow">
+              <div id="lhs-container">
+                <div id="lhs-border">
+                  <div id="lhs-inputs-container">
+                    <div id="display1-container-main">
+                      <div id="display1-container-lights">
+                        <div class="display1-red-light"></div>
+                        <div class="display1-red-light"></div>
+                      </div>
+                      <div id="display1-container" class="hidden">
+                        <div id="pokemon-image"></div>
+                        <div id="pokemon-info">
+                          <table>
+                            <tr>
+                              <td id="hp-txt">HP</td>
+                              <td id="hp">00</td>
+                            </tr>
+                            <tr>
+                              <td id="attack-txt">Attack</td>
+                              <td id="attack">00</td>
+                            </tr>
+                            <tr>
+                              <td id="defense-txt">Defense</td>
+                              <td id="defense">00</td>
+                            </tr>
+                            <tr>
+                              <td id="spattack-txt">Sp. Attack</td>
+                              <td id="special-attack">00</td>
+                            </tr>
+                            <tr>
+                              <td id="spdefense-txt">Sp. Defense</td>
+                              <td id="special-defense">00</td>
+                            </tr>
+                            <tr>
+                              <td id="speed-txt">Speed</td>
+                              <td id="speed">00</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div id="display1-btn-n-icon">
+                        <div id="display1-btn"></div>
+                        <div id="pokemon-information">
+                          <div id="pokemon-name"></div>
+                          <div id="pokemon-id"></div>
+                        </div>
+                        <div id="display1-icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="speaker"></div>
+                    <div id="align">
+                      <div id="align-left">
+                        <div id="red-n-blue-btn">
+                          <div id="first-btn"></div>
+                          <div id="second-btn"></div>
+                        </div>
+                        <div id="display2-container">
+                          <p><span id="types">Type</span></p>
+                          <span id="weight">Weight: 00</span>
+                          <span id="height">Height: 00</span>
+                        </div>
+                      </div>
+                      <div id="align-right">
+                        <svg
+                          id="joystick-controller"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 300 300"
+                          shape-rendering="geometricPrecision"
+                          text-rendering="geometricPrecision"
+                          project-id="83e0c485dcdc4b51a422766e276356c0"
+                          export-id="e3372f6114964697a719c44d42c8173c"
+                          cached="false"
+                          width="100px"
+                          height="100px"
+                        >
+                          <g>
+                            <polygon
+                              points="-84.234032,-146.048957 -41.985957,-103.373604
+            -126.482107,-103.373604 -84.234032,-146.048957"
+                              transform="matrix(1.005963 0 0 0.995891 234.73632 302.948842)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('DOWN')"
+                            />
+                            <rect
+                              width="85"
+                              height="80"
+                              rx="0"
+                              ry="0"
+                              transform="translate(107.500003
+            200)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('DOWN')"
+                            />
+                          </g>
+                          <g>
+                            <polygon
+                              points="-84.234032,-146.048957 -41.985957,-103.373604
+            -126.482107,-103.373604 -84.234032,-146.048957"
+                              transform="matrix(0
+            1.005963-.995891 0-2.948842 234.736319)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('LEFT')"
+                            />
+                            <rect
+                              width="85"
+                              height="80"
+                              rx="0"
+                              ry="0"
+                              transform="matrix(0 1-1 0 100 107.499999)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('LEFT')"
+                            />
+                          </g>
+                          <g transform="translate(0 0.000001)">
+                            <polygon
+                              points="-84.234032,-146.048957 -41.985957,-103.373604
+            -126.482107,-103.373604 -84.234032,-146.048957"
+                              transform="matrix(0-1.005963 0.995891 0 302.948842 65.26368)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('RIGHT')"
+                            />
+                            <rect
+                              width="85"
+                              height="80"
+                              rx="0"
+                              ry="0"
+                              transform="matrix(0 1-1 0 280
+            107.5)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('RIGHT')"
+                            />
+                          </g>
+                          <g transform="translate(.000001 0)">
+                            <polygon
+                              points="-84.234032,-146.048957 -41.985957,-103.373604
+            -126.482107,-103.373604 -84.234032,-146.048957"
+                              transform="matrix(-1.005963 0 0-.995891 65.263683-2.948842)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('UP')"
+                            />
+                            <rect
+                              width="85"
+                              height="80"
+                              rx="0"
+                              ry="0"
+                              transform="translate(107.500003
+            20)"
+                              fill="#272727"
+                              stroke-width="0"
+                              onclick="console.log('UP')"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="hinge">
+            <div id="hinge-one" class="hinge-pillar"></div>
+            <div id="hinge-two" class="hinge-pillar"></div>
+            <div id="hinge-three" class="hinge-pillar"></div>
+          </div>
+        </div>
+      </div>
+      <div id="rhs">
+        <div id="rhs-shadow">
+          <div id="rhs-container">
+            <div id="rhs-inputs-container">
+              <input
+                id="search-input"
+                class="display3-container"
+                placeholder="Search for Pokémon Name or ID:"
+                required
+              />
+              <div id="keypad-container">
+                <div id="one" class="keypad-btn">
+                  <span class="number">1</span>
+                  <span class="alphabet">ABC</span>
+                </div>
+                <div id="two" class="keypad-btn">
+                  <span class="number">2</span>
+                  <span class="alphabet">DEF</span>
+                </div>
+                <div id="three" class="keypad-btn">
+                  <span class="number">3</span>
+                  <span class="alphabet">GHI</span>
+                </div>
+                <div id="four" class="keypad-btn">
+                  <span class="number">4</span>
+                  <span class="alphabet">JKL</span>
+                </div>
+                <div id="five" class="keypad-btn">
+                  <span class="number">5</span>
+                  <span class="alphabet">MNO</span>
+                </div>
+                <div id="six" class="keypad-btn">
+                  <span class="number">6</span>
+                  <span class="alphabet">PQR</span>
+                </div>
+                <div id="seven" class="keypad-btn">
+                  <span class="number">7</span>
+                  <span class="alphabet">STU</span>
+                </div>
+                <div id="eight" class="keypad-btn">
+                  <span class="number">8</span>
+                  <span class="alphabet">VWX</span>
+                </div>
+                <div id="nine" class="keypad-btn">
+                  <span class="number">9</span>
+                  <span class="alphabet">YZ$</span>
+                </div>
+                <div id="zero" class="keypad-btn">
+                  <span class="number">0</span>
+                  <span class="alphabet">*@#</span>
+                </div>
+              </div>
+              <div id="dark-green-small-btn-container">
+                <div class="right-s"></div>
+                <div class="left-s"></div>
+              </div>
+              <div id="shift-clear-container">
+                <div id="shift">SHIFT</div>
+                <div id="clear">CLEAR</div>
+              </div>
+              <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass" style="scale: 120%"></i>
+              </button>
+              <div id="dark-green-big-btn-container">
+                <div class="right-b"></div>
+                <div class="left-b"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

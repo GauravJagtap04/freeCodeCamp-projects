@@ -1,0 +1,89 @@
+:root {
+  --bg-color: rgb(32, 32, 32);
+  --color: rgb(218, 218, 218);
+}
+
+html,
+body {
+  min-height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 5vh auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#input-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+#user-input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+  border: 2px solid var(--color);
+}
+
+#check-btn {
+  background-color: royalblue;
+}
+
+#clear-btn {
+  background-color: red;
+}
+
+#results-div {
+  font-size: 1.2em;
+}
