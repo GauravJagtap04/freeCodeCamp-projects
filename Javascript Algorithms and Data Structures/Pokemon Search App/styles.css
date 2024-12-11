@@ -16,6 +16,15 @@ html {
   color: #232323;
 }
 
+body {
+  background: linear-gradient(
+    45deg,
+    rgb(37, 255, 226),
+    rgb(94, 162, 224),
+    rgb(26, 255, 171)
+  );
+}
+
 #pokedex {
   position: relative;
   width: 755px;
