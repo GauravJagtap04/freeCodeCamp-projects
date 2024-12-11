@@ -209,11 +209,11 @@ const projectsJsAlgoDsa = [
     websitePath:
       "Javascript Algorithms and Data Structures/Cash Register/index.html",
     htmlUrl:
-      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/index.html",
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%20Register/index.html",
     cssUrl:
-      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/styles.css",
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%20Register/styles.css",
     jsUrl:
-      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%Register/script.js",
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Cash%20Register/script.js",
   },
   {
     id: "pokemon-search-app",
