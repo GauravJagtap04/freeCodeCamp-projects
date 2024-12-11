@@ -11,7 +11,7 @@ const respWebNavMenu = document.getElementById("resp-web-nav-menu");
 const jsAlgoDsaNavMenu = document.getElementById("js-algo-dsa-nav-menu");
 const navElement = document.querySelector("nav");
 const mainElement = document.querySelector("main");
-const themeDiv = document.getElementById("theme"); // Assuming there's a div for the icon
+const themeDiv = document.getElementById("theme");
 let themeIcon = document.getElementById("theme-icon");
 
 const currentTheme = localStorage.getItem("theme");
@@ -76,6 +76,13 @@ function closeProjectContainer() {
   main.style.filter = "none";
   footer.style.filter = "none";
 }
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    e.preventDefault();
+    closeProjectContainer();
+  }
+});
 
 async function showCode(htmlUrl, cssUrl, jsUrl) {
   nav.style.filter = "blur(5px)";
