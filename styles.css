@@ -160,6 +160,11 @@ ul {
   overflow: auto;
 }
 
+#projects-list-main > li:last-child .projects-list-sub {
+  right: 2px;
+  left: auto;
+}
+
 #projects-list-main {
   display: flex;
   padding: 0;

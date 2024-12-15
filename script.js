@@ -5,13 +5,21 @@ const footer = document.querySelector("footer");
 const projectFrame = document.getElementById("projectFrame");
 const projectContainer = document.getElementById("project-container");
 const projectTitle = document.querySelector(".project-tile");
+
 const respWebFieldset = document.getElementById("resp-web-fieldset");
 const jsAlgoDsaFieldset = document.getElementById("js-algo-dsa-fieldset");
+const fedLabFieldset = document.getElementById("fed-lab-fieldset");
+const dataVisualFieldset = document.getElementById("data-visual-fieldset");
+
 const respWebNavMenu = document.getElementById("resp-web-nav-menu");
 const jsAlgoDsaNavMenu = document.getElementById("js-algo-dsa-nav-menu");
+const fedLabNavMenu = document.getElementById("fed-lab-nav-menu");
+const dataVisualNavMenu = document.getElementById("data-visual-nav-menu");
+
 const navElement = document.querySelector("nav");
 const mainElement = document.querySelector("main");
 const themeDiv = document.getElementById("theme");
+
 let themeIcon = document.getElementById("theme-icon");
 
 const currentTheme = localStorage.getItem("theme");
@@ -236,6 +244,36 @@ const projectsJsAlgoDsa = [
   },
 ];
 
+const projectsfedlib = [
+  {
+    id: "random-quote-machine",
+    projectName: "Random Quote Machine",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Pokemon Search App/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/script.js",
+  },
+];
+
+const projectsDataVisual = [
+  {
+    id: "Bar Chart",
+    projectName: "Bar Chart",
+    websitePath:
+      "Javascript Algorithms and Data Structures/Pokemon Search App/index.html",
+    htmlUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/index.html",
+    cssUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/styles.css",
+    jsUrl:
+      "https://raw.githubusercontent.com/GauravJagtap04/freeCodeCamp-projects/main/Javascript%20Algorithms%20and%20Data%20Structures/Pokemon%20Search%20App/script.js",
+  },
+];
+
 const loadProjectTiles = () => {
   respWebFieldset.innerHTML = "";
   jsAlgoDsaFieldset.innerHTML = "";
@@ -284,6 +322,52 @@ const loadProjectTiles = () => {
     `;
 
       jsAlgoDsaNavMenu.innerHTML += `
+      <li><a class="nav-submenu" href="#${id}">${projectName}</a></li>
+    `;
+    }
+  );
+
+  projectsfedlib.forEach(
+    ({ id, projectName, websitePath, htmlUrl, cssUrl, jsUrl }) => {
+      fedLabFieldset.innerHTML += `
+      <div id="${id}" class="project-tile">
+        <div class="project-title">
+          ${projectName}
+        </div>
+        <div class="preview">
+          <iframe class = "preview-frame" src="${websitePath}"></iframe class = "preview-frame" class = "preview-frame">
+          <span onclick="loadProject('${websitePath}')">Show in full screen</span>
+        </div>
+        <div class="info">
+            <div class="show-code-att" onclick="showCode('${htmlUrl}', '${cssUrl}', '${jsUrl}')">Show code</div>
+        </div>
+      </div>
+    `;
+
+      fedLabNavMenu.innerHTML += `
+      <li><a class="nav-submenu" href="#${id}">${projectName}</a></li>
+    `;
+    }
+  );
+
+  projectsDataVisual.forEach(
+    ({ id, projectName, websitePath, htmlUrl, cssUrl, jsUrl }) => {
+      dataVisualFieldset.innerHTML += `
+      <div id="${id}" class="project-tile">
+        <div class="project-title">
+          ${projectName}
+        </div>
+        <div class="preview">
+          <iframe class = "preview-frame" src="${websitePath}"></iframe class = "preview-frame" class = "preview-frame">
+          <span onclick="loadProject('${websitePath}')">Show in full screen</span>
+        </div>
+        <div class="info">
+            <div class="show-code-att" onclick="showCode('${htmlUrl}', '${cssUrl}', '${jsUrl}')">Show code</div>
+        </div>
+      </div>
+    `;
+
+      dataVisualNavMenu.innerHTML += `
       <li><a class="nav-submenu" href="#${id}">${projectName}</a></li>
     `;
     }
